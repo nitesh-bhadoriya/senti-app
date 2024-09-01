@@ -1,0 +1,38 @@
+.tab-pane h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.tab-pane h1 {
+    font-size: 1.5rem;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #007bff;
+}
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 80px;
+}
+.files:hover input {
+    outline-offset: -8px;
+    background-color: rgba(236, 240, 241, .35);
+}
+.files input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.files input[type="file"]::before {
+    content: 'Upload Image';
+    display: block;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.files input[type="file"]:hover::before {
+    background: #2980b9;
+}
